@@ -1,0 +1,2 @@
+Taruh foto latar Beranda (Home) di folder ini dengan nama file: hero-bg.jpg
+(format .jpg/.jpeg/.png juga bisa, cukup sesuaikan nama file di assets/css/hero.css)

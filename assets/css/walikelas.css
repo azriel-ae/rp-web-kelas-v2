@@ -1,0 +1,110 @@
+/* ==========================================================
+   WALI KELAS
+   Kartu tunggal untuk menampilkan data wali kelas.
+   ========================================================== */
+
+.walikelas-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.walikelas-card {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  overflow: hidden;
+  background: var(--card-bg, #fff);
+  border: 1px solid var(--color-border, #e5eaf1);
+  border-radius: 1.25rem;
+  padding: 2.25rem 1.75rem;
+  text-align: center;
+  box-shadow: var(--shadow-sm, 0 8px 24px rgba(0, 0, 0, 0.06));
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.walikelas-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 68px;
+  background: var(--gradient-primary, linear-gradient(135deg, #2f6df0, #1e3a5f));
+  opacity: .08;
+}
+
+.walikelas-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-glow, 0 14px 32px rgba(0, 0, 0, 0.1));
+}
+
+.walikelas-photo-wrap {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  margin: 0 auto 1.25rem;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid #fff;
+  box-shadow: 0 0 0 3px var(--color-primary-soft-2, #dbe8ff);
+  background: #f1f3f5;
+}
+
+.walikelas-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.walikelas-nama {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 1.35rem;
+  margin-bottom: 0.25rem;
+}
+
+.walikelas-jabatan {
+  color: var(--color-primary, #2563eb);
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.walikelas-details {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  border-top: 1px solid #eee;
+  padding-top: 1rem;
+}
+
+.walikelas-details li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.35rem 0;
+  font-size: 0.9rem;
+}
+
+.walikelas-details li span {
+  color: #888;
+}
+
+.walikelas-details li strong {
+  font-weight: 600;
+  text-align: right;
+}
+
+.walikelas-ig {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: var(--bs-primary, #0d6efd);
+  text-decoration: none;
+}
+
+.walikelas-ig:hover {
+  text-decoration: underline;
+}

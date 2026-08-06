@@ -1,0 +1,17 @@
+.student-toolbar { max-width: 520px; margin: 0 auto 26px; }
+.student-search { width: 100%; padding: 12px 18px; border: 1px solid var(--color-border); border-radius: 999px; outline: none; background: #fff; transition: box-shadow var(--transition), border-color var(--transition); }
+.student-search:focus { border-color: var(--color-primary); box-shadow: 0 0 0 4px var(--color-primary-soft); }
+.siswa-card { padding: 20px 12px; text-align: center; cursor: pointer; }
+.siswa-avatar { width: 72px; height: 72px; display: grid; place-items: center; overflow: hidden; margin: 0 auto 12px; border-radius: 50%; background: var(--color-primary-soft); color: var(--color-primary); font-weight: 700; box-shadow: 0 0 0 3px #fff, 0 0 0 5px var(--color-primary-soft-2); transition: box-shadow var(--transition); }
+.siswa-card:hover .siswa-avatar { box-shadow: 0 0 0 3px #fff, 0 0 0 5px var(--color-primary); }
+.siswa-avatar img { width: 100%; height: 100%; object-fit: cover; }
+.siswa-number { display: inline-block; margin-bottom: 10px; padding: 3px 9px; border-radius: 999px; background: var(--color-primary-soft); color: var(--color-primary); font-size: .68rem; font-weight: 700; }
+.siswa-name { min-height: 42px; margin: 0; font-size: .87rem; font-weight: 600; line-height: 1.45; }
+.siswa-meta { margin: 5px 0 0; color: var(--color-text-muted); font-size: .72rem; }
+.student-modal-photo { width: 130px; height: 130px; margin: 0 auto; object-fit: cover; border-radius: 50%; border: 4px solid #fff; box-shadow: 0 0 0 3px var(--color-primary-soft-2); }
+.student-details { margin: 24px 0 0; padding: 0; list-style: none; }
+.student-details li { display: flex; justify-content: space-between; gap: 20px; padding: 11px 0; border-bottom: 1px solid var(--color-border); }
+.student-details span:first-child { color: var(--color-text-muted); }
+.portofolio-box { display: block; margin: 18px auto 0; padding: 12px 28px; border: none; border-radius: var(--radius-md); background: var(--gradient-primary); color: #fff; font-weight: 700; font-size: .9rem; letter-spacing: .02em; cursor: pointer; box-shadow: var(--shadow-glow); transition: transform var(--transition), box-shadow var(--transition); }
+.portofolio-box:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
+.portofolio-box:active { transform: translateY(0); }

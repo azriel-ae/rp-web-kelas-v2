@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Website resmi kelas XI TKJ 1 SMKN 1 Gempol">
+  <title>XI TKJ 1 | SMKN 1 Gempol</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/hero.css">
+  <link rel="stylesheet" href="assets/css/about.css">
+  <link rel="stylesheet" href="assets/css/walikelas.css">
+  <link rel="stylesheet" href="assets/css/siswa.css">
+  <link rel="stylesheet" href="assets/css/gallery.css">
+  <link rel="stylesheet" href="assets/css/contact.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+  <nav id="mainNav" class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+        <img class="nav-logo" src="assets/img/logo/smkn1gempol.png" alt="Logo SMKN 1 Gempol" onerror="this.src='assets/img/logo/default-avatar.png'">
+        <span class="brand-text">XI TKJ <span class="text-primary-custom">1</span></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Buka navigasi">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="navbarNav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link" href="#siswa">Siswa</a></li>
+          <li class="nav-item"><a class="nav-link" href="#galeri">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontak">Sosmed</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header id="home" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-logo-wrap">
+          <img class="hero-logo" src="assets/img/logo/smkn1gempol.png" alt="Logo SMKN 1 Gempol" onerror="this.src='assets/img/logo/default-avatar.png'">
+        </div>
+        <p class="hero-kicker">Teknik Komputer dan Jaringan</p>
+        <h1 class="hero-title">XI TKJ <span class="text-primary-custom">1</span></h1>
+        <p class="hero-subtitle">SMKN 1 Gempol</p>
+        <p class="hero-desc">Ruang informasi sederhana untuk mengenal kelas, wali kelas, seluruh siswa, dan dokumentasi kegiatan XI TKJ 1.</p>
+        <div class="hero-actions">
+          <a class="btn-primary-custom" href="#siswa"><i class="fa-solid fa-users"></i> Lihat siswa</a>
+          <a class="btn-outline-custom" href="#galeri"><i class="fa-regular fa-images"></i> Galeri</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="tentang" class="section">
+      <div class="container">
+        <div class="section-head"><span class="section-tag">Tentang Kami</span><h2 class="section-title">Kenalan dengan <span class="text-primary-custom">XI TKJ 1</span></h2></div>
+        <div class="row g-4 justify-content-center">
+          <div class="col-lg-8">
+            <article class="site-card about-main about-main--photo text-center">
+              <div class="about-main-overlay"></div>
+              <div class="about-main-content">
+                <span class="icon-box icon-box--light"><i class="fa-solid fa-graduation-cap"></i></span>
+                <h3 class="mt-3">XI TKJ 1</h3>
+                <p>Kami adalah kelas <strong>XI TKJ 1</strong> dari <strong>SMKN 1 Gempol</strong> yang berjumlah <strong>36 siswa</strong>. Sebagai bagian dari jurusan Teknik Komputer dan Jaringan, kami terus belajar, berkembang, dan berprestasi di bidang teknologi informasi.</p>
+                <div class="about-stats"><div class="about-stat"><strong>36</strong><span>Siswa</span></div><div class="about-stat"><strong>TKJ</strong><span>Jurusan</span></div></div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="section-head mt-5"><span class="section-tag">Wali Kelas</span><h2 class="section-title">Wali <span class="text-primary-custom">Kelas</span></h2></div>
+        <div id="walikelasWrap" class="walikelas-wrap"><div class="empty-state">Memuat data wali kelas...</div></div>
+      </div>
+    </section>
+
+    <section id="siswa" class="section">
+      <div class="container">
+        <div class="section-head"><span class="section-tag">Anggota Kelas</span><h2 class="section-title">Daftar <span class="text-primary-custom">Siswa</span></h2><p class="section-subtitle">Cari nama atau klik kartu untuk melihat detail siswa.</p></div>
+        <div class="student-toolbar"><input id="studentSearch" class="student-search" type="search" placeholder="Cari nama siswa..." aria-label="Cari siswa"></div>
+        <div id="siswaList" class="row g-3"><div class="col-12"><div class="empty-state">Memuat data siswa...</div></div></div>
+      </div>
+    </section>
+
+    <section id="galeri" class="section section-alt">
+      <div class="container"><div class="section-head"><span class="section-tag">Dokumentasi</span><h2 class="section-title">Galeri <span class="text-primary-custom">Kelas</span></h2></div><div id="galleryList" class="row g-3"><div class="col-12"><div class="empty-state">Memuat galeri...</div></div></div><div id="galleryPagination" class="gallery-pagination"></div></div>
+    </section>
+
+    <section id="kontak" class="section">
+      <div class="container">
+        <div class="section-head"><span class="section-tag">Media Sosial</span><h2 class="section-title">Kontak <span class="text-primary-custom">Kelas</span></h2><p class="section-subtitle">Sapa dan ikuti keseharian kami lewat Instagram dan TikTok kelas.</p></div>
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-5">
+            <a class="site-card contact-card" href="https://instagram.com/tkj.1networks_" target="_blank" rel="noopener">
+              <div class="contact-shot">
+                <img src="assets/img/kontak/ig-screenshot.jpg" alt="Cuplikan profil Instagram @tkj.1networks_" loading="lazy" onerror="this.remove()">
+                <div class="contact-shot-fallback"><i class="fa-brands fa-instagram"></i><span>Taruh screenshot di<br><code>assets/img/kontak/ig-screenshot.jpg</code></span></div>
+              </div>
+              <div class="contact-card-body">
+                <span class="icon-box"><i class="fa-brands fa-instagram"></i></span>
+                <div><h3>Instagram</h3><p>@tkj.1networks_</p></div>
+                <i class="fa-solid fa-arrow-up-right-from-square contact-arrow"></i>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-5">
+            <a class="site-card contact-card" href="https://www.tiktok.com/@xitkj1smk1npol" target="_blank" rel="noopener">
+              <div class="contact-shot">
+                <img src="assets/img/kontak/tiktok-screenshot.jpg" alt="Cuplikan profil TikTok @xitkj1smk1npol" loading="lazy" onerror="this.remove()">
+                <div class="contact-shot-fallback"><i class="fa-brands fa-tiktok"></i><span>Taruh screenshot di<br><code>assets/img/kontak/tiktok-screenshot.jpg</code></span></div>
+              </div>
+              <div class="contact-card-body">
+                <span class="icon-box"><i class="fa-brands fa-tiktok"></i></span>
+                <div><h3>TikTok</h3><p>@xitkj1smk1npol</p></div>
+                <i class="fa-solid fa-arrow-up-right-from-square contact-arrow"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container"><div class="row g-4"><div class="col-lg-6"><div class="d-flex align-items-center gap-2"><img class="footer-logo" src="assets/img/logo/smkn1gempol.png" alt="Logo sekolah"><span class="footer-brand">XI TKJ 1</span></div><p class="mt-3">Website informasi kelas XI TKJ 1 SMKN 1 Gempol.</p></div><div class="col-6 col-lg-3"><h3 class="h6 text-white">Navigasi</h3><ul class="footer-links"><li><a href="#tentang">Tentang</a></li><li><a href="#siswa">Siswa</a></li><li><a href="#galeri">Galeri</a></li></ul></div><div class="col-6 col-lg-3"><h3 class="h6 text-white">Media sosial</h3><ul class="footer-links"><li><a href="https://www.tiktok.com/@xitkj1smk1npol" target="_blank" rel="noopener">TikTok</a></li></ul></div></div><div class="footer-bottom">&copy; <span id="currentYear"></span> XI TKJ 1 · SMKN 1 Gempol</div></div></footer>
+
+  <button id="backToTop" class="back-to-top" type="button" aria-label="Kembali ke atas"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <div class="modal fade" id="siswaModal" tabindex="-1" aria-labelledby="modalNama" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h2 id="modalNama" class="modal-title fs-5">Detail siswa</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button></div><div class="modal-body text-center"><img id="modalFoto" class="student-modal-photo" src="assets/img/logo/default-avatar.png" alt="Foto siswa"><button type="button" id="modalPortofolio" class="portofolio-box" hidden>Portofolio</button><ul class="student-details text-start"><li><span>Nomor absen</span><strong id="modalAbsen">-</strong></li><li><span>NIS</span><strong id="modalNis">-</strong></li><li><span>Jenis kelamin</span><strong id="modalJk">-</strong></li><li id="modalIgRow"><span>Instagram</span><strong id="modalIg">-</strong></li></ul></div></div></div></div>
+  <div id="lightbox" class="lightbox" aria-hidden="true"><button class="lightbox-close" type="button" aria-label="Tutup">&times;</button><button class="lightbox-nav lightbox-prev" type="button" data-lightbox-nav="prev" aria-label="Foto sebelumnya"><i class="fa-solid fa-chevron-left"></i></button><div class="lightbox-content"><img id="lightboxImage" src="" alt="Foto galeri"><div id="lightboxCounter" class="lightbox-counter"></div></div><button class="lightbox-nav lightbox-next" type="button" data-lightbox-nav="next" aria-label="Foto berikutnya"><i class="fa-solid fa-chevron-right"></i></button></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/navbar.js" defer></script>
+  <script src="assets/js/walikelas.js" defer></script>
+  <script src="assets/js/siswa.js" defer></script>
+  <script src="assets/js/gallery.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
